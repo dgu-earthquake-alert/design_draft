@@ -1,189 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
 
-  <body class="root">
-    <header>
-      <div class="img">
-        <div class="title">지진알리미</div>
-      </div>
-      <nav class="nav">
-        <ul class="nav_list">
-          <li class="nav_item">홈</li>
-          <li class="nav_item">지진대피소 조회</li>
-          <li class="nav_item nav_item_select">지진발생 이력</li>
-          <li class="nav_item">행동요령</li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="container mb-4">
-        <div class="row mt-5">
-          <div
-            class="col main_title d-flex justify-content-center mt-4"
-            style="font-size: 24px"
-          >
-            지진 발생 이력을 날짜별로 조회합니다.
-            <div class="btn_datepicker ms-2">
-              <div class="btn-group">
-                <button
-                  class="btn btn-secondary dropdown-toggle color_blue"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  2023-04-01
-                </button>
-                <ul class="dropdown-menu">
-                  ...
-                </ul>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body class="root">
+  <header>
+    <div class="img">
+      <div class="title">지진알리미</div>
+    </div>
+    <nav class="nav">
+      <ul class="nav_list">
+        <li class="nav_item">홈</li>
+        <li class="nav_item">지진대피소 조회</li>
+        <li class="nav_item nav_item_select">지진발생 이력</li>
+        <li class="nav_item">행동요령</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container mb-4">
+      <div class="row mt-5">
+        <div class="col main_title d-flex justify-content-center mt-4" style="font-size: 24px">
+          날짜별 지진 발생 이력을 조회해 보세요.
+          <div class="btn_datepicker ms-2">
+            <div class="btn-group">
+              <button class="btn btn-secondary dropdown-toggle color_blue" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                2023-04-01
+              </button>
+              <ul class="dropdown-menu">
+                ...
+              </ul>
             </div>
           </div>
         </div>
-        <div class="row mt-1">
-          <div class="offset-2 col-8 p-2">
-            <table class="table text-center">
-              <thead>
-                <tr class="bg_color_blue">
-                  <th
-                    class="thead_th"
-                    style="border-top-left-radius: 10px"
-                    scope="col"
-                  >
-                    발생 일자
-                  </th>
-                  <th class="thead_th" scope="col">발생 시각</th>
-                  <th class="thead_th" scope="col">규모</th>
-                  <th
-                    class="thead_th"
-                    style="border-top-right-radius: 10px"
-                    scope="col"
-                  >
-                    진원지
-                  </th>
-                </tr>
-              </thead>
-              <tbody class="tbody_black">
-                <tr>
-                  <th scope="row">2023-04-01</th>
-                  <td>12:00 PM</td>
-                  <td>4.5</td>
-                  <td>서울시 중구 장충동</td>
-                </tr>
-                <tr>
-                  <th scope="row">2023-04-01</th>
-                  <td>12:00 PM</td>
-                  <td>4.5</td>
-                  <td>서울시 중구 장충동</td>
-                </tr>
-                <tr>
-                  <th scope="row">2023-04-01</th>
-                  <td>12:00 PM</td>
-                  <td>4.5</td>
-                  <td>서울시 중구 장충동</td>
-                </tr>
-                <tr>
-                  <th scope="row">2023-04-01</th>
-                  <td>12:00 PM</td>
-                  <td>4.5</td>
-                  <td>서울시 중구 장충동</td>
-                </tr>
-                <tr>
-                  <th scope="row">2023-04-01</th>
-                  <td>12:00 PM</td>
-                  <td>4.5</td>
-                  <td>서울시 중구 장충동</td>
-                </tr>
-                <tr>
-                  <th scope="row">2023-04-01</th>
-                  <td>12:00 PM</td>
-                  <td>4.5</td>
-                  <td>서울시 중구 장충동</td>
-                </tr>
-                <tr>
-                  <th scope="row">2023-04-01</th>
-                  <td>12:00 PM</td>
-                  <td>4.5</td>
-                  <td>서울시 중구 장충동</td>
-                </tr>
-                <tr>
-                  <th scope="row">2023-04-01</th>
-                  <td>12:00 PM</td>
-                  <td>4.5</td>
-                  <td>서울시 중구 장충동</td>
-                </tr>
-                <tr>
-                  <th scope="row">2023-04-01</th>
-                  <td>12:00 PM</td>
-                  <td>4.5</td>
-                  <td>서울시 중구 장충동</td>
-                </tr>
-                <tr>
-                  <th scope="row">2023-04-01</th>
-                  <td>12:00 PM</td>
-                  <td>4.5</td>
-                  <td>서울시 중구 장충동</td>
-                </tr>
-                <!-- 29개의 행 추가 -->
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6 offset-3 d-flex justify-content-center mb-5">
-            <nav aria-label="Page navigation example">
-              <ul class="pagination">
-                <li class="page-item">
-                  <a class="page-link font_color_blue" href="#">이전</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link font_color_blue" href="#">1</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link font_color_blue" href="#">2</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link font_color_blue" href="#">3</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link font_color_blue" href="#">다음</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+      </div>
+      <div class="row mt-1">
+        <div class="offset-2 col-8 p-2">
+          <table class="table text-center">
+            <thead>
+              <tr class="bg_color_blue">
+                <th class="thead_th" style="border-top-left-radius: 10px" scope="col">
+                  발생 일자
+                </th>
+                <th class="thead_th" scope="col">발생 시각</th>
+                <th class="thead_th" scope="col">규모</th>
+                <th class="thead_th" style="border-top-right-radius: 10px" scope="col">
+                  진원지
+                </th>
+              </tr>
+            </thead>
+            <tbody class="tbody_black">
+              <tr>
+                <th scope="row">2023-04-01</th>
+                <td>12:00 PM</td>
+                <td>4.5</td>
+                <td>서울시 중구 장충동</td>
+              </tr>
+              <tr>
+                <th scope="row">2023-04-01</th>
+                <td>12:00 PM</td>
+                <td>4.5</td>
+                <td>서울시 중구 장충동</td>
+              </tr>
+              <tr>
+                <th scope="row">2023-04-01</th>
+                <td>12:00 PM</td>
+                <td>4.5</td>
+                <td>서울시 중구 장충동</td>
+              </tr>
+              <tr>
+                <th scope="row">2023-04-01</th>
+                <td>12:00 PM</td>
+                <td>4.5</td>
+                <td>서울시 중구 장충동</td>
+              </tr>
+              <tr>
+                <th scope="row">2023-04-01</th>
+                <td>12:00 PM</td>
+                <td>4.5</td>
+                <td>서울시 중구 장충동</td>
+              </tr>
+              <tr>
+                <th scope="row">2023-04-01</th>
+                <td>12:00 PM</td>
+                <td>4.5</td>
+                <td>서울시 중구 장충동</td>
+              </tr>
+              <tr>
+                <th scope="row">2023-04-01</th>
+                <td>12:00 PM</td>
+                <td>4.5</td>
+                <td>서울시 중구 장충동</td>
+              </tr>
+              <tr>
+                <th scope="row">2023-04-01</th>
+                <td>12:00 PM</td>
+                <td>4.5</td>
+                <td>서울시 중구 장충동</td>
+              </tr>
+              <tr>
+                <th scope="row">2023-04-01</th>
+                <td>12:00 PM</td>
+                <td>4.5</td>
+                <td>서울시 중구 장충동</td>
+              </tr>
+              <tr>
+                <th scope="row">2023-04-01</th>
+                <td>12:00 PM</td>
+                <td>4.5</td>
+                <td>서울시 중구 장충동</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </main>
-    <footer class="footer">
-      <div class="footer_container">
-        <div class="footer_item">
-          <span class="footer_item_title">지진알리미</span>
-          <br />
-          &copy; 2023
+      <div class="row">
+        <div class="col-6 offset-3 d-flex justify-content-center mb-5">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link font_color_blue" href="#">이전</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link font_color_blue" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link font_color_blue" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link font_color_blue" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link font_color_blue" href="#">다음</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="footer_item"></div>
-        <div class="footer_item"></div>
-        <div class="footer_item"></div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer_container">
+      <div class="footer_item">
+        <span class="footer_item_title">지진알리미</span>
+        <br />
+        &copy; 2023
+      </div>
+      <div class="footer_item"></div>
+      <div class="footer_item"></div>
+      <div class="footer_item"></div>
+    </div>
+  </footer>
+</body>
+
 </html>
